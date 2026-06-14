@@ -30,9 +30,9 @@
 
 ## Segment watch
 - **Starlink (lead):** {{subs · launch cadence · ARPU · direct-to-cell — standing line every day, "no change" if so}}
+- **xAI / Grok (lead):** {{Grok release/benchmark · Colossus/compute · X · AI-segment burn — standing line every day, "no change" if so}}
 - **Launch / Starship:** {{…or omit if quiet}}
 - **Starshield / gov:** {{…}}
-- **xAI / Grok:** {{…}}  *(now inside SPCX)*
 - **X (platform):** {{…}}
 - **Terafab:** {{…}}
 

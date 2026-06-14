@@ -38,8 +38,9 @@ more than rockets. Track all of it, weighted by stock impact:
 - **Starlink** — the profit engine (~60%+ of revenue): subscriber adds, pricing, capacity, direct-to-cell, regulatory wins/losses.
 - **Starshield** — classified/government tier; defense contracts and awards.
 - **Terafab** — the nascent semiconductor effort; treat as optionality, flag any concrete news.
-- **xAI / Grok** — now inside SPCX: model releases, compute deals, revenue signals.
-- **X (the platform)** — ad/revenue and regulatory items that touch the consolidated entity.
+- **xAI / Grok (the AI segment — the second pillar of the thesis)** — the Feb 2026 merger folded xAI into SPCX (xAI acquired by SpaceX at ~$250B; combined entity ~$1.25T pre-IPO). Track: Grok model releases and benchmark standing (Grok 4.1 led LMArena), usage/MAU, the **Colossus** supercomputer buildout (Memphis — hundreds of thousands of GPUs, Colossus 2 online), enterprise/compute deals — and critically the **AI-segment burn**: ~$3.2B AI revenue in 2025 against a multi-billion operating loss, the main drag pulling the consolidated company to a net loss. This segment is both the bull case (frontier AI + orbital compute) and the bear case (losses).
+- **X (the platform — owned by xAI since Mar 2025, so inside SPCX)** — ad/subscription revenue, MAU, and regulatory items that flow into the consolidated entity.
+- **The entity is now rockets + AI.** 2025 combined revenue ~$18.7B with a net loss (~$4.9B) driven by the AI segment. Starlink's profit and xAI's burn are the two numbers that move the thesis — verify both live.
 - **Elon headline risk** — Musk posts/politics/legal that historically swing the stock.
 
 Full source list, the entity map with as-of figures, and the live query set live in
@@ -74,7 +75,9 @@ Do these in order. Fire independent searches in parallel where the tool allows.
    numbers you sourced this run.** A stale or invented quote is worse than "last
    confirmed close $X as of <date>; intraday unverified." `browse_page` on a JS quote
    page is fine for context, but don't trust a hard number it can't cleanly parse —
-   corroborate with a finance source or mark it unconfirmed.
+   corroborate with a finance source or mark it unconfirmed. Also scan prediction-market
+   odds (Kalshi — kalshi.com/search?q=spacex) for a forward-looking read on near-term
+   SpaceX/Starship/SPCX events; report these as market-implied probabilities, not fact.
 
 3. **X scrape — the price-moving pass.** Grok's edge; lean on it via
    `x_keyword_search` (`mode="Latest"`). Run the query set in the reference file
@@ -105,7 +108,7 @@ Fill `assets/brief-template.md`. Structure, in order:
 2. **TL;DR (≤5 bullets).** Only the price-moving items, hardest signal first. Each bullet ends with a parenthetical impact tag: *(catalyst / risk / sentiment / noise)*.
 3. **Key metrics (scannable snapshot).** A tight, fixed block so the brief stays decision-grade: SPCX price + daily % move · volume vs. the short post-IPO average · market cap / implied valuation · distance from the $135 IPO price · analyst consensus + any new target · Starlink subs/constellation milestone · next Starship window · X buzz level. Mark anything you couldn't source this run as **unverified**.
 4. **What moved today.** The 2–4 developments most likely to affect the stock, each with a one-line "why it matters."
-5. **Segment watch.** Lead with **Starlink** — the profit engine — and give it a standing line every day (subs, launch cadence, ARPU, direct-to-cell) even if it's "no change." Then the others only when there's news: Launch/Starship · Starshield/gov · xAI/Grok · X · Terafab. Don't pad the quiet ones.
+5. **Segment watch.** Two standing leads — a line each every day even if "no change": **Starlink** (the profit engine — subs, cadence, ARPU, direct-to-cell) and **xAI / Grok** (the AI segment — Grok releases/benchmarks, Colossus/compute deals, X, and the AI-segment burn that drives consolidated losses). Then the others only when there's news: Launch/Starship · Starshield/gov · Terafab. Don't pad the quiet ones.
 6. **Social & video pulse.** X sentiment summary + top posts (links), then notable YouTube videos (links). Separate **confirmed** from **chatter**.
 7. **Catalysts & risks.** The dated events ahead (quiet-period end, lockup expiry, next Starship flight, first earnings, regulatory/contract milestones) and the near-term overhangs to watch.
 8. **Sources.** Every claim's link, grouped or inline. A brief without sources is not usable for investing.
@@ -146,5 +149,6 @@ This skill is built to repeat. Two ways to run it daily:
 
 ## Version history
 
+- **v1.2** (2026-06-15) — deepened the **xAI / Grok** coverage: AI now a co-lead segment (Grok benchmarks, Colossus, X, and the AI-segment burn that drives consolidated losses); entity reframed as rockets + AI with 2025 revenue/loss anchors; xAI official sources + metrics added.
 - **v1.1** (2026-06-15) — multi-source stock (Nasdaq + Yahoo Finance analyst targets), explicit scannable key-metrics block, Starlink as the standing lead segment, catalysts-and-risks framing, `$SPCX` cashtag + higher engagement floor, SEC EDGAR (8-K / Form 4 / lockup) watch.
 - **v1.0** (2026-06-15) — initial: tiered price-moving brief, full combined-entity scope (incl. xAI/Grok + X), anti-fabrication/citation rules, delta-since-yesterday logic.
