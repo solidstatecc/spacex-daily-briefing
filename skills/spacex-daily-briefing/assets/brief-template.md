@@ -1,7 +1,7 @@
 # SpaceX / SPCX — Daily Investor Brief
 *Generated: {{TIMESTAMP}} · Window: {{LOOKBACK}} · Live data via web/X search*
 
-## {{BULLISH | BEARISH | NEUTRAL}} on SPCX today — {{one-line reason}}
+## {{Bullish | Bearish | Neutral}} on SPCX — {{one short reason, ≤18 words}}
 
 **TL;DR**
 - {{price-moving item 1}} *(catalyst)*
@@ -46,8 +46,8 @@
 - **Catalysts ahead:** {{quiet-period end ~early Jul · lockup expiry ~early Dec · next Starship flight · first earnings · contract/regulatory milestone}}
 - **Risks / overhangs:** {{valuation vs. consensus · insider supply at lockup · passive-flow / index mechanics · Elon headline risk across SpaceX/xAI/X}}
 
-## Sources
-- {{linked source}} · {{linked source}} · {{linked source}}
+## Key sources
+{{one short line — 3–5 key links; most claims are already linked inline above}}
 
 ---
 *Live tool fetches as of {{TIMESTAMP}}. Data moves fast — verify prices and filings before acting. Informational only, not financial advice. Note: Grok/xAI is part of the SPCX entity.*

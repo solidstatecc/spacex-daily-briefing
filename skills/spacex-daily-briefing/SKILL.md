@@ -104,16 +104,16 @@ Do these in order. Fire independent searches in parallel where the tool allows.
 
 Fill `assets/brief-template.md`. Structure, in order:
 
-1. **Headline (one line).** The net read: *Bullish / Bearish / Neutral on SPCX today, because <single reason>.*
+1. **Headline (one short line, ≤18 words).** The net read: *Bullish / Bearish / Neutral on SPCX today — <single reason>.* One clause, not three; don't cram the whole thesis into it.
 2. **TL;DR (≤5 bullets).** Only the price-moving items, hardest signal first. Each bullet ends with a parenthetical impact tag: *(catalyst / risk / sentiment / noise)*.
 3. **Key metrics (scannable snapshot).** A tight, fixed block so the brief stays decision-grade: SPCX price + daily % move · volume vs. the short post-IPO average · market cap / implied valuation · distance from the $135 IPO price · analyst consensus + any new target · Starlink subs/constellation milestone · next Starship window · X buzz level. Mark anything you couldn't source this run as **unverified**.
 4. **What moved today.** The 2–4 developments most likely to affect the stock, each with a one-line "why it matters."
 5. **Segment watch.** Two standing leads — a line each every day even if "no change": **Starlink** (the profit engine — subs, cadence, ARPU, direct-to-cell) and **xAI / Grok** (the AI segment — Grok releases/benchmarks, Colossus/compute deals, X, and the AI-segment burn that drives consolidated losses). Then the others only when there's news: Launch/Starship · Starshield/gov · Terafab. Don't pad the quiet ones.
 6. **Social & video pulse.** X sentiment summary + top posts (links), then notable YouTube videos (links). Separate **confirmed** from **chatter**.
 7. **Catalysts & risks.** The dated events ahead (quiet-period end, lockup expiry, next Starship flight, first earnings, regulatory/contract milestones) and the near-term overhangs to watch.
-8. **Sources.** Every claim's link, grouped or inline. A brief without sources is not usable for investing.
+8. **Sources — inline only.** Put the link on each claim inline as `[source]` where the claim appears; do **not** append a long categorized sources list (it bloats the brief). At most one short line of the 3–5 key links at the very end. Citations must support the brief, not dominate it.
 
-Keep it skimmable: the headline + TL;DR must stand alone for a reader who reads nothing else.
+Keep it tight: the headline + TL;DR must stand alone, and the whole brief should read in **~2 minutes** (aim for roughly one screen plus the metrics table). Cut anything that isn't price-moving — depth lives in the linked sources, not in the prose. Don't restate the same fact across TL;DR, what-moved, and segments.
 
 ## Guardrails — read these, they matter
 
@@ -149,6 +149,7 @@ This skill is built to repeat. Two ways to run it daily:
 
 ## Version history
 
+- **v1.3** (2026-06-15) — tightened output: ≤18-word headline, inline-only citations (no sources appendix), ~2-minute length target, no cross-section repetition.
 - **v1.2** (2026-06-15) — deepened the **xAI / Grok** coverage: AI now a co-lead segment (Grok benchmarks, Colossus, X, and the AI-segment burn that drives consolidated losses); entity reframed as rockets + AI with 2025 revenue/loss anchors; xAI official sources + metrics added.
 - **v1.1** (2026-06-15) — multi-source stock (Nasdaq + Yahoo Finance analyst targets), explicit scannable key-metrics block, Starlink as the standing lead segment, catalysts-and-risks framing, `$SPCX` cashtag + higher engagement floor, SEC EDGAR (8-K / Form 4 / lockup) watch.
 - **v1.0** (2026-06-15) — initial: tiered price-moving brief, full combined-entity scope (incl. xAI/Grok + X), anti-fabrication/citation rules, delta-since-yesterday logic.

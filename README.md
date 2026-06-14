@@ -10,7 +10,9 @@ Built for Grok Build (native **X Search** + **Web Search**) and any Claude-compa
 
 **Scope (post-merger):** launch & Starship, Starlink, Starshield, Dragon, the Terafab chip effort, plus xAI/Grok and X.
 
-**Output:** one-line read → ≤5-bullet TL;DR → scannable key metrics → what moved today → segment watch (Starlink leads) → social & video pulse → catalysts & risks → sources. Reads yesterday's brief and reports only the delta.
+**Output:** one-line read (≤18 words) → ≤5-bullet TL;DR → scannable key metrics → what moved today → segment watch (Starlink + xAI/Grok lead) → social & video pulse → catalysts & risks → inline sources. Tight enough to read in ~2 minutes; reads yesterday's brief and reports only the delta.
+
+**Sources:** Nasdaq + Yahoo Finance (analyst targets), SEC EDGAR (8-K / Form 4 / lockup), Kalshi (prediction-market odds), X, YouTube, spacex.com, Wikipedia.
 
 **Guardrails:** states only numbers it sourced that run; separates confirmed facts from chatter; never invents a quote. Informational only — **not financial advice**. Discloses that Grok/xAI now sits inside the SPCX entity.
 
