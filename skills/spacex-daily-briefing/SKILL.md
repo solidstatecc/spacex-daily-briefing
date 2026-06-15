@@ -51,10 +51,12 @@ Full source list, the entity map with as-of figures, and the live query set live
 In **Grok Build**, map each task to the native tool — these are the real tool names:
 
 - `web_search` — news, the live SPCX quote, YouTube fallback. Pass a focused `query`; favor recent results.
-- `browse_page` — summarize one page (spacex.com, Wikipedia) with a tight *summarizer instruction*. Good for background; **not** reliable for live stock numbers.
+- `browse_page` — *optional*, background only (spacex.com, Wikipedia) with a tight *summarizer instruction*. Not reliable for live numbers and can error on JS/rate-limited pages — don't depend on it; if it fails, skip and use `web_search`.
 - `x_keyword_search` — the daily X scrape. Supports `mode="Latest"`, `limit`, and operators (`since:`, `min_faves:`, `from:`, `filter:has_engagement`).
 - `x_semantic_search` — meaning-based X pass for sentiment/themes; supports `from_date`.
 - `render_inline_citation` — attach a source to a specific claim.
+
+**`web_search` is the workhorse — prefer it** for the quote, news, YouTube, and Kalshi. Per-page fetchers (`browse_page`, or a `WebFetch` tool if the host exposes one) often fail on JS-heavy or rate-limited pages. **A failed fetch or tool error is never fatal:** skip that source, mark the affected item *unverified this run*, and keep going. Always produce the brief from whatever succeeded — never abort or stall because a page wouldn't load. If fetches keep failing, lean entirely on `web_search` + the X tools and note the gap in the brief.
 
 In a non-Grok (Claude-compatible) agent, substitute your web search for `web_search`/`browse_page` and search `x.com` via the web for the X passes.
 
@@ -149,6 +151,7 @@ This skill is built to repeat. Two ways to run it daily:
 
 ## Version history
 
+- **v1.3.1** (2026-06-15) — resilience: `web_search` is the primary web tool; per-page fetch (`browse_page`/`WebFetch`) is optional and a failed fetch/tool error is non-fatal (skip + mark unverified, never abort the brief).
 - **v1.3** (2026-06-15) — tightened output: ≤18-word headline, inline-only citations (no sources appendix), ~2-minute length target, no cross-section repetition.
 - **v1.2** (2026-06-15) — deepened the **xAI / Grok** coverage: AI now a co-lead segment (Grok benchmarks, Colossus, X, and the AI-segment burn that drives consolidated losses); entity reframed as rockets + AI with 2025 revenue/loss anchors; xAI official sources + metrics added.
 - **v1.1** (2026-06-15) — multi-source stock (Nasdaq + Yahoo Finance analyst targets), explicit scannable key-metrics block, Starlink as the standing lead segment, catalysts-and-risks framing, `$SPCX` cashtag + higher engagement floor, SEC EDGAR (8-K / Form 4 / lockup) watch.

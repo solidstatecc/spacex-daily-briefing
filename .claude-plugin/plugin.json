@@ -1,6 +1,6 @@
 {
   "name": "spacex-daily-briefing",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Daily investor-grade briefing on SpaceX / SPCX (post-IPO; merged with xAI — covers Starlink, the xAI/Grok AI segment + X, Starship, and Starshield). Live X + web search with Nasdaq/Yahoo analyst targets, SEC filings, and Kalshi prediction-market odds, distilled into a tight, price-moving tiered brief (headline, TL;DR, key metrics, segment watch, catalysts & risks, inline sources). Anti-fabrication: states only numbers it sourced that run; informational only, not financial advice.",
   "author": {
     "name": "Solid State",

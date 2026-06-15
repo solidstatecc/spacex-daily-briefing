@@ -4,6 +4,11 @@ Copy-ready tool calls for Grok Build. Always set `since:` / `from_date` to *yest
 so the scrape stays daily-fresh. Raise `min_faves:` when volume is high — chase signal,
 not every reply. Run independent calls in parallel.
 
+**`web_search` is the workhorse.** Use it for the quote, news, YouTube, and Kalshi.
+`browse_page` (and any `WebFetch`-style per-page tool) is optional and can error on
+JS/rate-limited pages — if a fetch fails, **skip it, mark the item unverified, and
+keep going.** A failed fetch must never abort the brief.
+
 ## browse_page — background & official (not for live quotes)
 
 ```xml
